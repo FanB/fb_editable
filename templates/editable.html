@@ -1,0 +1,6 @@
+<div class="col-lg-3" ng-mouseover="showEditButton(true)" ng-mouseleave="showEditButton(false)">
+  <span ng-transclude ng-hide="edition" ></span>
+  <i class="icon-pencil" ng-show="showIcon && !edition" ng-click="edition=true" style="margin-left:10px;"></i>
+  <input type="text" ng-model="value" ng-show="edition">
+  <i class="icon-remove" ng-click="edition=false" ng-show="edition"></i>
+</div>

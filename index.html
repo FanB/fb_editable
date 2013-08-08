@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app_editable">
+<head>
+  <meta charset="utf-8">
+  <title>Editable AngularJS directive</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/angular.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body ng-controller="myCtrl">
+  <div class="container">
+    <div class="well row">
+      <div editable value="someContent">{{someContent}}</div>
+      <div editable value="content2">{{content2}}</div>
+      <div editable value="content3">{{content3}}</div>
+      <div editable value="content4">{{content4}}</div>
+    </div>
+  </div>
+</body>
+</html>
